@@ -26,7 +26,7 @@ createTmpFolder();
 
 function logMessage(message) {
   const timestamp = moment(Date.now()).tz(TIMEZONE).locale('en').format('HH:mm z');
-  console.log(`[CYPHER-X] ${message}`);
+  console.log(`[JINX-XMD] ${message}`);
   fs.appendFileSync(path.join(__dirname, 'tmp', getLogFileName()), `[${timestamp}] ${message}\n`);
 }
 
@@ -72,7 +72,7 @@ function start() {
   });
 
   const handleShutdown = (signal) => {
-    logMessage(`Shutting down CypherX due to ${signal}...`);
+    logMessage(`Shutting down JINX-XMD due to ${signal}...`);
     p.kill();
     errorLogStream.end();
     process.exit(0);
