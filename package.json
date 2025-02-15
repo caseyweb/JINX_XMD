@@ -1,5 +1,5 @@
 {
-  "name": "CypherX",
+  "name": "JINX-XMD",
   "version": "1.2.0",
   "description": "The best Whatsapp bot",
   "main": "index.js",
@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "Tylor",
+  "author": "Caseyrhodes",
   "license": "MIT",
   "dependencies": {
         "@whiskeysockets/baileys": "^6.7.12",
