@@ -8,7 +8,7 @@ module.exports = {
   operate: async ({ m, Cypher, reply }) => {
     try {
       const me = m.sender;
-      const response = await axios.get('https://api.github.com/repos/Dark-Xploit/CypherX');
+      const response = await axios.get('https://api.github.com/repos/caseyweb/JINX_XMD');
       if (response.status === 200) {
         const repoData = response.data;
         const repos = `
@@ -22,7 +22,7 @@ module.exports = {
 > ${repoData.forks_count}
 
 *GITHUB LINK:* 
-https://github.com/Dark-Xploit/CypherX
+https://github.com/caseyweb/JINX_XMD
 
 @${me.split("@")[0]}👋, Don't forget to star and fork my repository😊
 
